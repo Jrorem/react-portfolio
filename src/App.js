@@ -1,17 +1,29 @@
 import Header from './components/Header'
-import Content from './components/Content'
 import Footer from './components/Footer'
-import { BrowserRouter as Router } from 'react-router-dom'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
+import Portfolio from './pages/Portfolio'
+import Resume from './pages/Resume'
+import './components/styles.css'
+import { Route, Routes } from 'react-router-dom'
+import background from "../src/assets/background.jpg";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-      <h1>app</h1>
-      <Header/>
-      <Content/>
+    <div class="App" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', height: '100vh'}}>  
+    <Header/>  
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/portfolio' element={<Portfolio/>} />
+        <Route path='/resume' element={<Resume/>} />
+      </Routes>
       <Footer/>
-      </Router>
+      
     </div>
   );
 }

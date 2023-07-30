@@ -1,30 +1,61 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import Button from 'react-bootstrap/Button';
 
-const Navigation = () => {
+
+export default function Navigation () {
+    const [currentPage, setCurrentPage] = useState('/')
   return (
     <div>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"></link>
        <nav>
-        <ul>
+        <ul class="navbar">
+        <li>
+        <Button variant="secondary">
+                <Link 
+                className={currentPage === '/' ? 'active' : ''} to='/'
+                onClick={() => setCurrentPage('/')}
+                >
+                    Home
+                </Link>
+                </Button>
+            </li>
             <li>
-                <NavLink to='/about'>
+            <Button variant="secondary">
+                <Link to='/about'
+                className={currentPage === '/about' ? 'active' : ''}
+                onClick={() => setCurrentPage('/about')}
+                >
                     About Me
-                </NavLink>
+                </Link>
+                </Button>
             </li>
             <li>
-                <NavLink to='/portfolio'>
+            <Button variant="secondary">
+                <Link to='/portfolio'
+                className={currentPage === '/portfolio' ? 'active' : ''}
+                onClick={() => setCurrentPage('/portfolio')}>
                     Portfolio
-                </NavLink>
+                </Link>
+                </Button>
             </li>
             <li>
-                <NavLink to='/resume'>
+            <Button variant="secondary">
+                <Link to='/resume'
+                className={currentPage === '/resume' ? 'active' : ''}
+                onClick={() => setCurrentPage('/resume')}>
                     Resume
-                </NavLink>
+                </Link>
+                </Button>
             </li>
             <li>
-                <NavLink to='/contact'>
+            <Button variant="secondary">
+                <Link to='/contact'
+                className={currentPage === '/contact' ? 'active' : ''}
+                onClick={() => setCurrentPage('/contact')}>
                     Contact
-                </NavLink>
+                </Link>
+                </Button>
             </li>
             
         </ul>
@@ -34,4 +65,3 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
