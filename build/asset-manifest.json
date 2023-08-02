@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.5135850e.css",
+    "main.js": "/react-portfolio/static/js/main.e86b92e5.js",
+    "static/media/pumped.png": "/react-portfolio/static/media/pumped.98adeef984db91539a0b.png",
+    "static/media/concert.png": "/react-portfolio/static/media/concert.0bf52a3c127105605bd5.png",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.ee83a21dae211e428ba6.pdf",
+    "static/media/background.jpg": "/react-portfolio/static/media/background.2d300d3903fdeffdb817.jpg",
+    "static/media/password.png": "/react-portfolio/static/media/password.ca42089873b07fafdfb6.png",
+    "static/media/profile.jpg": "/react-portfolio/static/media/profile.e8816304971ffb02f627.jpg",
+    "static/media/weather.png": "/react-portfolio/static/media/weather.127c86d406c87e10e640.png",
+    "static/media/schedule.png": "/react-portfolio/static/media/schedule.25b4756e5b572e4e6bac.png",
+    "static/media/quiz.png": "/react-portfolio/static/media/quiz.fe1d4245900823a4aeff.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.5135850e.css.map": "/react-portfolio/static/css/main.5135850e.css.map",
+    "main.e86b92e5.js.map": "/react-portfolio/static/js/main.e86b92e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5135850e.css",
+    "static/js/main.e86b92e5.js"
+  ]
+}
