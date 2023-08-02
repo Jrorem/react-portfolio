@@ -6,13 +6,14 @@ import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
 import './components/styles.css'
-import { Route, Routes } from 'react-router-dom'
+import { Router, Route, Routes } from 'react-router-dom'
 import background from "../src/assets/background.jpg";
 
 
 
 function App() {
   return (
+    <Router basename='react-portfolio'>
     <div class="App" style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover', height: '100vh'}}>  
     <Header/>  
       <Routes>
@@ -25,6 +26,7 @@ function App() {
       <Footer/>
       
     </div>
+    </Router>
   );
 }
 
